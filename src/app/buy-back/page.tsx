@@ -11,11 +11,11 @@ interface ProcessStepProps {
 
 const ProcessStep: React.FC<ProcessStepProps> = ({ icon: Icon, title, description }) => (
     <div className="flex flex-col items-center text-center">
-        <div className="bg-blue-500 rounded-full p-4 mb-4">
-            <Icon className="w-8 h-8 text-white" />
+        <div className="bg-blue-500 rounded-full p-3 sm:p-4 mb-3 sm:mb-4">
+            <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
         </div>
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-400">{description}</p>
+        <h3 className="text-lg sm:text-xl font-semibold mb-2">{title}</h3>
+        <p className="text-sm sm:text-base text-gray-400">{description}</p>
     </div>
 );
 
@@ -64,21 +64,19 @@ const BuybackPage: React.FC = () => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        // Handle form submission logic here
         console.log('Submitted:', formData);
-        // You would typically send this data to your backend for processing
     };
 
     return (
         <div className="min-h-screen bg-gradient-to-r from-gray-900 to-black text-white">
             <Header />
 
-            <main className="container mx-auto px-4 py-24">
-                <h1 className="text-4xl font-bold mb-8 text-center">รับซื้อ iPhone ของคุณ</h1>
+            <main className="container mx-auto px-4 py-12 sm:py-24">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center">รับซื้อ iPhone ของคุณ</h1>
 
-                <section className="mb-16">
-                    <h2 className="text-2xl font-semibold mb-8 text-center">กระบวนการรับซื้อของเรา</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <section className="mb-12 sm:mb-16">
+                    <h2 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-center">กระบวนการรับซื้อของเรา</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
                         <ProcessStep
                             icon={Smartphone}
                             title="ส่งข้อมูลเครื่อง"
@@ -97,8 +95,8 @@ const BuybackPage: React.FC = () => {
                     </div>
                 </section>
 
-                <section className="bg-gray-900 rounded-3xl p-8 mb-16">
-                    <h2 className="text-2xl font-semibold mb-6 text-center">ประเมินราคา iPhone ของคุณ</h2>
+                <section className="bg-gray-900 rounded-3xl p-6 sm:p-8 mb-12 sm:mb-16">
+                    <h2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-center">ประเมินราคา iPhone ของคุณ</h2>
                     <form onSubmit={handleSubmit} className="max-w-md mx-auto">
                         <SelectField
                             label="รุ่น iPhone"
@@ -120,32 +118,32 @@ const BuybackPage: React.FC = () => {
                         />
                         <button
                             type="submit"
-                            className="w-full bg-blue-500 text-white py-3 rounded-full text-lg font-semibold hover:bg-blue-600 transition-colors duration-300 mt-6 flex items-center justify-center"
+                            className="w-full bg-blue-500 text-white py-2 sm:py-3 rounded-full text-base sm:text-lg font-semibold hover:bg-blue-600 transition-colors duration-300 mt-4 sm:mt-6 flex items-center justify-center"
                         >
                             ประเมินราคาทันที
-                            <ArrowRight className="ml-2 w-5 h-5" />
+                            <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                         </button>
                     </form>
                 </section>
 
                 <section className="text-center">
-                    <h2 className="text-2xl font-semibold mb-4">ทำไมต้องเลือกขาย iPhone กับเรา?</h2>
+                    <h2 className="text-xl sm:text-2xl font-semibold mb-4">ทำไมต้องเลือกขาย iPhone กับเรา?</h2>
                     <ul className="text-left max-w-2xl mx-auto">
-                        <li className="flex items-start mb-4">
-                            <CheckCircle className="w-6 h-6 text-blue-500 mr-2 flex-shrink-0" />
-                            <span>ราคารับซื้อที่ยุติธรรมและแข่งขันได้</span>
+                        <li className="flex items-start mb-3 sm:mb-4">
+                            <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-blue-500 mr-2 flex-shrink-0" />
+                            <span className="text-sm sm:text-base">ราคารับซื้อที่ยุติธรรมและแข่งขันได้</span>
                         </li>
-                        <li className="flex items-start mb-4">
-                            <CheckCircle className="w-6 h-6 text-blue-500 mr-2 flex-shrink-0" />
-                            <span>กระบวนการรวดเร็ว ได้รับเงินทันที</span>
+                        <li className="flex items-start mb-3 sm:mb-4">
+                            <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-blue-500 mr-2 flex-shrink-0" />
+                            <span className="text-sm sm:text-base">กระบวนการรวดเร็ว ได้รับเงินทันที</span>
                         </li>
-                        <li className="flex items-start mb-4">
-                            <CheckCircle className="w-6 h-6 text-blue-500 mr-2 flex-shrink-0" />
-                            <span>ทีมงานมืออาชีพ พร้อมให้คำปรึกษา</span>
+                        <li className="flex items-start mb-3 sm:mb-4">
+                            <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-blue-500 mr-2 flex-shrink-0" />
+                            <span className="text-sm sm:text-base">ทีมงานมืออาชีพ พร้อมให้คำปรึกษา</span>
                         </li>
                         <li className="flex items-start">
-                            <CheckCircle className="w-6 h-6 text-blue-500 mr-2 flex-shrink-0" />
-                            <span>รับประกันการลบข้อมูลส่วนตัวทั้งหมด</span>
+                            <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-blue-500 mr-2 flex-shrink-0" />
+                            <span className="text-sm sm:text-base">รับประกันการลบข้อมูลส่วนตัวทั้งหมด</span>
                         </li>
                     </ul>
                 </section>

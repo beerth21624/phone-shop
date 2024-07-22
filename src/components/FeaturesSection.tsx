@@ -1,36 +1,36 @@
 import React from 'react';
 import { Phone, Repeat, DollarSign, CheckCircle, ChevronRight } from 'lucide-react';
 
-const FeatureCard = ({ icon, title, description, learnMoreLink }:{
+const FeatureCard = ({ icon, title, description, learnMoreLink }: {
     icon: React.ReactNode,
     title: string,
     description: string,
     learnMoreLink: string
 }) => (
-    <div className="bg-gray-800 rounded-3xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-        <div className="text-4xl mb-6 text-blue-400">{icon}</div>
-        <h3 className="text-2xl font-semibold mb-4 text-white">{title}</h3>
-        <p className="text-gray-400 mb-6">{description}</p>
+    <div className="bg-gray-800 rounded-3xl p-6 sm:p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+        <div className="text-3xl sm:text-4xl mb-4 sm:mb-6 text-blue-400">{icon}</div>
+        <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-white">{title}</h3>
+        <p className="text-sm sm:text-base text-gray-400 mb-4 sm:mb-6">{description}</p>
         <a
             href={learnMoreLink}
-            className="text-blue-400 hover:text-blue-300 transition-colors duration-300 flex items-center"
+            className="text-blue-400 hover:text-blue-300 transition-colors duration-300 flex items-center text-sm sm:text-base"
         >
             เรียนรู้เพิ่มเติม
-            <ChevronRight className="ml-2 w-4 h-4" />
+            <ChevronRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
         </a>
     </div>
 );
 
-const FeaturesSection:React.FC= () => {
+const FeaturesSection: React.FC = () => {
     return (
-        <section className="py-24 bg-gradient-to-b from-gray-900 to-black">
+        <section className="py-12 sm:py-24 bg-gradient-to-b from-gray-900 to-black">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-center mb-4 text-white">ทำไมต้องเลือก BB Phone?</h2>
-                <p className="text-xl text-center mb-16 text-gray-400 max-w-3xl mx-auto">
+                <h2 className="text-2xl sm:text-4xl font-bold text-center mb-4 text-white">ทำไมต้องเลือก BB Phone?</h2>
+                <p className="text-base sm:text-xl text-center mb-8 sm:mb-16 text-gray-400 max-w-3xl mx-auto">
                     เรามุ่งมั่นที่จะมอบประสบการณ์การใช้งาน iPhone มือสองที่ดีที่สุดให้กับคุณ
                     ด้วยบริการที่ครบวงจรและคุณภาพที่คุณวางใจได้
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                     <FeatureCard
                         icon={<Phone className="text-blue-400" />}
                         title="iPhone คุณภาพเยี่ยม"
@@ -56,13 +56,13 @@ const FeaturesSection:React.FC= () => {
                         learnMoreLink="#after-sales"
                     />
                 </div>
-                <div className="text-center mt-16">
+                <div className="text-center mt-8 sm:mt-16">
                     <a
                         href="#all-features"
-                        className="inline-flex items-center bg-blue-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-600 transition-colors duration-300"
+                        className="inline-flex items-center bg-blue-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-base sm:text-lg font-semibold hover:bg-blue-600 transition-colors duration-300"
                     >
                         ดูคุณสมบัติทั้งหมด
-                        <ChevronRight className="ml-2 w-5 h-5" />
+                        <ChevronRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                     </a>
                 </div>
             </div>
