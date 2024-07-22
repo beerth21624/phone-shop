@@ -65,10 +65,10 @@ const Header: React.FC<HeaderProps> = () => {
             {isMenuOpen && (
                 <div className="md:hidden bg-gray-900 mt-4">
                     <ul className="py-4 px-4 space-y-4">
-                        <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300 block">หน้าหลัก</a></li>
-                        <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300 block">iPhone มือสอง</a></li>
-                        <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300 block">รับซื้อ</a></li>
-                        <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300 block">ติดต่อเรา</a></li>
+                        <li><a href="/" className="text-gray-300 hover:text-white transition-colors duration-300 block">หน้าหลัก</a></li>
+                        <li><a href="/iphone" className="text-gray-300 hover:text-white transition-colors duration-300 block">iPhone มือสอง</a></li>
+                        <li><a href="/buy-back" className="text-gray-300 hover:text-white transition-colors duration-300 block">รับซื้อ</a></li>
+                        <li><a href="/contact" className="text-gray-300 hover:text-white transition-colors duration-300 block">ติดต่อเรา</a></li>
                     </ul>
                     <div className="py-4 px-4 space-y-4">
                         <div className="relative">
