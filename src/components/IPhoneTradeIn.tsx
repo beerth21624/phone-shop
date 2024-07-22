@@ -58,14 +58,7 @@ const IPhoneTradeIn: React.FC = () => {
                     </button>
                 </div>
 
-                <div className="mt-16 text-center">
-                    <p className="text-blue-200 mb-4">ร้านของเราได้รับการรับรองจาก</p>
-                    <div className="flex justify-center space-x-8">
-                        <img src="/api/placeholder/100/40" alt="Certification 1" className="h-10 opacity-70 hover:opacity-100 transition-opacity duration-300" />
-                        <img src="/api/placeholder/100/40" alt="Certification 2" className="h-10 opacity-70 hover:opacity-100 transition-opacity duration-300" />
-                        <img src="/api/placeholder/100/40" alt="Certification 3" className="h-10 opacity-70 hover:opacity-100 transition-opacity duration-300" />
-                    </div>
-                </div>
+               
             </div>
         </section>
     );

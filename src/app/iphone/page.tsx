@@ -92,10 +92,10 @@ const AllIPhonesPage: React.FC = () => {
     const [currentPage, setCurrentPage] = useState<number>(1);
 
     const iphones: IPhone[] = [
-        { model: "iPhone 12 Pro", price: "฿19,900", image: "/api/placeholder/300/200", features: ['จอ 6.1" Super Retina XDR', 'กล้องหลัง 12MP x3', 'ความจุ 128GB'], rating: 5 },
-        { model: "iPhone 13", price: "฿22,900", image: "/api/placeholder/300/200", features: ['จอ 6.1" Super Retina XDR', 'กล้องหลัง 12MP x2', 'ความจุ 128GB'], rating: 4 },
-        { model: "iPhone 11", price: "฿14,900", image: "/api/placeholder/300/200", features: ['จอ 6.1" Liquid Retina HD', 'กล้องหลัง 12MP x2', 'ความจุ 64GB'], rating: 4 },
-        { model: "iPhone XR", price: "฿9,900", image: "/api/placeholder/300/200", features: ['จอ 6.1" Liquid Retina HD', 'กล้องหลัง 12MP', 'ความจุ 64GB'], rating: 3 },
+        { model: "iPhone 12 Pro", price: "฿19,900", image: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", features: ['จอ 6.1" Super Retina XDR', 'กล้องหลัง 12MP x3', 'ความจุ 128GB'], rating: 5 },
+        { model: "iPhone 13", price: "฿22,900", image: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", features: ['จอ 6.1" Super Retina XDR', 'กล้องหลัง 12MP x2', 'ความจุ 128GB'], rating: 4 },
+        { model: "iPhone 11", price: "฿14,900", image: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", features: ['จอ 6.1" Liquid Retina HD', 'กล้องหลัง 12MP x2', 'ความจุ 64GB'], rating: 4 },
+        { model: "iPhone XR", price: "฿9,900", image: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", features: ['จอ 6.1" Liquid Retina HD', 'กล้องหลัง 12MP', 'ความจุ 64GB'], rating: 3 },
     ];
 
     const filteredIPhones = iphones.filter((iphone) =>

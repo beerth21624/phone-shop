@@ -122,7 +122,7 @@ const ContactUsPage: React.FC = () => {
                         <div className="mt-6 sm:mt-8">
                             <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">แผนที่</h3>
                             <div className="bg-gray-700 rounded-lg overflow-hidden" style={{ height: '250px', maxHeight: '50vh' }}>
-                                <img src="/api/placeholder/600/300" alt="Map" className="w-full h-full object-cover" />
+                                <img src="https://cdn.buttercms.com/Ym1iRZNbRHOeWv0X4x3w" alt="Map" className="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>

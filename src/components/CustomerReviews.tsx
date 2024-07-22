@@ -40,25 +40,25 @@ const CustomerReviews = () => {
             name: "คุณสมชาย",
             review: "บริการดีมาก iPhone ที่ซื้อมาใช้งานได้ดีเหมือนใหม่เลยครับ ประทับใจมากกับการบริการหลังการขาย ทีมงานใส่ใจลูกค้าจริงๆ",
             rating: 5,
-            image: "/api/placeholder/100/100"
+            image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
             name: "คุณสมหญิง",
             review: "ราคาถูกกว่าที่อื่นมาก แถมยังได้รับประกันด้วย คุ้มค่ามากๆ ค่ะ ได้เครื่องสภาพดีเกินคาด แนะนำให้เพื่อนๆ มาอุดหนุนแล้วค่ะ",
             rating: 4,
-            image: "/api/placeholder/100/100"
+            image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
             name: "คุณมานะ",
             review: "ทีมซ่อมบำรุงให้บริการเยี่ยมมาก แก้ปัญหาได้รวดเร็ว ให้คำแนะนำดีมาก ทำให้ใช้งาน iPhone ได้คุ้มค่ามากขึ้น",
             rating: 5,
-            image: "/api/placeholder/100/100"
+            image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
             name: "คุณวิภา",
             review: "ประทับใจกับความซื่อสัตย์ของร้าน เคยทำ iPhone ตกหล่น ทางร้านซ่อมให้ฟรีโดยไม่คิดเงิน ทั้งที่การรับประกันหมดไปแล้ว",
             rating: 5,
-            image: "/api/placeholder/100/100"
+            image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
     ];
 
